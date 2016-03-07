@@ -8,7 +8,7 @@ angular.module('warApp')
 
        .when('/:id', {
         templateUrl: 'views/serverdetails.html',
-      
+        controller: 'serverController as SC'
       })
 
        .when('/settings', {

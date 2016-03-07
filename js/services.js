@@ -9,12 +9,13 @@ angular.module('warApp')
 
     return $http(config);
   }
-  this.showServer= function(id){
+  this.showServer = function(id){
     var config = {
       method: 'GET',
       url: 'http://localhost:3000/' + id
       };
+
     return $http(config);
-    }
+  }
 
 }]);

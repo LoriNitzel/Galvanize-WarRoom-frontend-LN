@@ -1,13 +1,5 @@
- <div class ="container">
-  <div class ="row">
-    <div class="col-md-8">
-    <h1>Galvanize War Room</h1>
-    </div>
-    <div class="col-md-4">
-    <h4 style="margin-top: 30px">Overview | <a href="#"> Settings</a></h4>
-    </div>
-  </div>
-  <div class="row" ng-repeat="server in MC.server">
+
+  <div class="row">
     <div class="col-md-12">
       <h2>Server Name {{server.id}}</h2>
     </div>
@@ -18,9 +10,9 @@
   <div class="row">
     <div class="col-md-12" style="margin-left: 10px;">
       <p>Average Response Time {{}}</p>
-      <p>Response Time {{}}</p>
-      <p>Operating System: {{}}</p>
-      <p>CPU: {{}}</p>
+      <p>Response Time {{server.responseTime}}</p>
+      <p>Operating System: {{server.os}}</p>
+      <p>CPU: {{server.cpu}}</p>
     </div>
   </div>
 </div>
