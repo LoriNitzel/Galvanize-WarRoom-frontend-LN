@@ -4,9 +4,9 @@ function mainController($scope, serverService){
 
   var vm = this;
 
-  // serverService.getServers().then(function(data){
-  //   console.log(data);
-  //   vm.servers = data;
-  // });
+  serverService.getServer().then(function(data){
+    console.log(data.data.data);
+    vm.servers = data.data.data;
+  });
 
 }

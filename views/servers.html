@@ -7,33 +7,17 @@
       <h4 style="margin-top: 30px">Overview | <a href="#"> Settings</a></h4>
       </div>
     </div>
-    <div class="row">
+  <div class="row">
+    <div ng-repeat="server in MC.servers">
       <div class="col-md-4" style="border: 1px solid black">
-        <h4>Server Name 1</h4>
+        <h4>Server Name {{server.id}}</h4>
         <br>
         <br>
-        <p>Average Response Time {{4 + 6}}</p>
+        <p>Average Response Time </p>
         <br>
         <br>
-        <p class = "responseBox">Response Time {{}}</p>
-      </div>
-      <div class="col-md-4" style="border: 1px solid black">
-        <h4>Server Name 2</h4>
-          <br>
-          <br>
-          <p>Average Response Time {{}}</p>
-          <br>
-          <br>
-          <p class = "responseBox">Response Time {{}}</p>
-      </div>
-      <div class="col-md-4" style="border: 1px solid black">
-        <h4>Server Name 3</h4>   
-          <br>
-          <br>
-          <p>Average Response Time {{}}</p>
-          <br>
-          <br>
-          <p class = "responseBox">Response Time {{}}</p>
+        <p class = "responseBox">Response Time {{server.responseTime}}</p>
       </div>
     </div>
+  </div>
   </div>
