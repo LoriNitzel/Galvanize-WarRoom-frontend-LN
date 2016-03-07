@@ -9,4 +9,8 @@ function mainController($scope, serverService){
     vm.servers = data.data.data;
   });
 
+  serverService.showServer().then(function(data){
+    console.log(data);
+    vm.server = data.data;
+  })
 }

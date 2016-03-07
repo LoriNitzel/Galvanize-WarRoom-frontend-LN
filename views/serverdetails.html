@@ -7,13 +7,13 @@
     <h4 style="margin-top: 30px">Overview | <a href="#"> Settings</a></h4>
     </div>
   </div>
-  <div class="row">
+  <div class="row" ng-repeat="server in MC.server">
     <div class="col-md-12">
-      <h2>Server Name {{}}</h2>
+      <h2>Server Name {{server.id}}</h2>
     </div>
-  <div class="row">
+  
     <div class="col-md-12" style="border: 1px solid black">
-      <p class = "responseBox">Response Time {{}}</p>
+      <p class = "responseBox">Response Time {{server.responseTime}}</p>
     </div>
   <div class="row">
     <div class="col-md-12" style="margin-left: 10px;">

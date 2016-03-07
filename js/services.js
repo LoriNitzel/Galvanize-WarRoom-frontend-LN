@@ -13,7 +13,8 @@ angular.module('warApp')
     var config = {
       method: 'GET',
       url: 'http://localhost:3000/' + id
-      }
+      };
+    return $http(config);
     }
 
 }]);
